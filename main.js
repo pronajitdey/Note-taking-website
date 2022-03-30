@@ -70,7 +70,7 @@ search.addEventListener("input", function() {
     // console.log(input);
     let noteCards = document.getElementsByClassName("notecard");
     Array.from(noteCards).forEach(function(element) {
-        let cardTxt = element.getElementsByTagName("p")[0].innerText;
+        let cardTxt = element.getElementsByTagName("p")[0].innerText.toLowerCase();
         // console.log(cardTxt);
         if (cardTxt.includes(input)) {
             element.style.display = "block";
